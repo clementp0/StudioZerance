@@ -1,0 +1,115 @@
+/* --------------- Global style & variables --------------- */
+body {
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+:root {
+    --zerance-yellow: #FFCD19;
+}
+
+.text_bold {
+    font-weight: 900;
+}
+
+/* Custom font provided */
+@font-face {
+    font-family: "Karla";
+    src: url("assets/fonts/Karla-Regular.ttf");
+}
+
+/* --------------- Logo & Header Menu --------------- */
+
+header {
+    font-family: Futura, sans-serif;
+    font-weight: 700;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    height: 100px;
+}
+
+.header_img img {
+    position: absolute;
+    max-height: 45%;
+    top: 15px;
+}
+
+.header_elements {
+    font-size: 18px;
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.header_elements a {
+    position: relative;
+}
+
+.header_elements a::before {
+    content: "";
+    position: absolute;
+    bottom: -10;
+    left: 0;
+    height: 4px;
+    background-color: var(--zerance-yellow);
+    transition: width 0.3s ease-in-out;
+}
+
+.header_elements a:hover::before {
+    width: 100%;
+}
+
+.header_elements a:hover {
+    color: var(--zerance-yellow);
+}
+
+/* --------------- Banner & Banner content --------------- */
+
+.banner_container {
+    height: 80vh;
+    background-color: beige;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.banner_heading {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: Karla, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.banner_title {
+    font-size: 4rem;
+    font-family: Futura, sans-serif;
+}
+
+.banner_title>span {
+    background: url("../img/underline.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    overflow: visible;
+}
+
+a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #ffcd1a;
+    bottom: -10px;
+    transition: .3s width;
+}
