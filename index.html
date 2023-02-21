@@ -84,10 +84,41 @@
     <!-- Infinite Text -->
     <div class="infinite_container">
         <div class="infinite_loop">
-        <p class="infinite_loop_text text_bold">/ Frédéric Diefental / Good cat Bad cat / Quand c’est trop, c’est Tropico / Qu’est ce qui est jaune et qui attend ? / Frédéric Diefental / Good cat Bad cat / Quand c’est trop, c’est Tropico / Qu’est ce qui est jaune et qui attend ?</p>
+            <p class="infinite_loop_text text_bold">/ Frédéric Diefental / Good cat Bad cat / Quand c’est trop, c’est
+                Tropico / Qu’est ce qui est jaune et qui attend ? / Frédéric Diefental / Good cat Bad cat / Quand c’est
+                trop, c’est Tropico / Qu’est ce qui est jaune et qui attend ?</p>
         </div>
     </div>
- <!-- Script Importation -->
+    <!-- Contact -->
+    <div class="contact_btn" onclick="displayContact_overlay()"></div>
+    <div class="contact_overlay">
+        <div class="contact_container">
+            <span class="contact_container_close" onclick="closeContact()">&times;</span>
+            <p class="contact_heading">Veuillez remplir le formulaire ci-dessous et nous vous recontacterons dès que
+                possible.</p>
+            <div class="contact_form">
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Prénom" required>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <br>
+                    <textarea id="message" name="message" placeholder="Message:" required></textarea>
+                    <br>
+                    <button type="button" onclick="getGender()">Valider</button>
+                </form>
+            </div>
+        </div>
+        <div class="contact_popup">
+            <div class="contact_popup_container">
+                <span class="contact_popup_close" onclick="closeContact()">&times;</span>
+                <h2 class="heading">Merci de nous avoir contacté !</h2>
+                <p class="contact_popup_subtitle">Nous reviendrons vers vous au plus vite.. </p>
+                <p id="contact_popup_gender" class="text_bold"></p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Script Importation -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

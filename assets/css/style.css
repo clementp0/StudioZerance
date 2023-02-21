@@ -1,6 +1,7 @@
 /* --------------- Global style & variables --------------- */
 body {
     margin: 0;
+    font-family: Futura, sans-serif;
 }
 
 a {
@@ -35,7 +36,6 @@ a {
 /* --------------- Logo & Header Menu --------------- */
 
 header {
-    font-family: Futura, sans-serif;
     font-weight: 700;
     margin: auto;
     display: flex;
@@ -98,7 +98,6 @@ header {
 
 .banner_title {
     font-size: 4rem;
-    font-family: Futura, sans-serif;
 }
 
 .banner_title>span {
@@ -179,7 +178,6 @@ header {
 }
 
 .slider_showmore{
-    font-family: Futura, sans-serif;
     background-image: url('../img/underline.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -223,7 +221,6 @@ margin: auto;
 
 .infinite_loop_text {
     font-size: 2rem;
-    font-family: Futura, sans-serif;
     color: var(--zerance-white);
     white-space: nowrap;
 }
@@ -236,3 +233,156 @@ margin: auto;
         transform: translateX(-100%);
     }
 }
+
+/* --------------- Contact --------------- */
+
+
+.contact_btn{
+    z-index: 1;
+    background-color: var(--zerance-yellow);
+    background-image: url(../img/chat-icon.png);
+    background-size: 70%;
+    box-shadow: 2px 2px 7px 0px rgb(0 0 0 / 35%);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.contact_btn:hover{
+    cursor: pointer;
+}
+.contact_overlay{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.contact_container{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,249,249,1) 77%, var(--zerance-yellow) 36%, var(--zerance-yellow) 100%);
+    border: 1px solid #e9e9e9;
+    z-index: 1;
+    width: 330px;
+    height: 480px;
+    border-radius: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    padding: 20px;
+}
+
+.contact_heading{
+    font-family: Karla, sans-serif;
+    color: var(--zerance-white);
+}
+.contact_form {
+    height: 70%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e9e9e9;
+    border-left: 6px solid var(--zerance-yellow);
+    background-color: var(--zerance-white);
+}
+.contact_form input {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+}
+.contact_form textarea {
+    resize: none;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+}
+.contact_form button {
+    background-color: var(--zerance-yellow);
+    color: var(--zerance-black);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+}
+.contact_form button:hover{
+    cursor: pointer;
+}
+.contact_popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .contact_popup_container {
+    border-radius: 5px;
+    background-color: var(--zerance-white);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #e9e9e9;
+    border-left: 6px solid var(--zerance-yellow);
+    width: 80%;
+    text-align: center;
+  }
+  
+  .contact_popup_close {
+    color: var(--zerance-black);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .contact_container_close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    color: var(--zerance-yellow);
+    font-size: 28px;
+    font-weight: bold;
+    background-color:var(--zerance-white);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 7px 0px rgb(0 0 0 / 35%);
+}
+.contact_container_close:hover{
+    cursor: pointer;
+}
+
+  .contact_popup_close:hover,
+  .contact_popup_close:focus {
+    color: var(--zerance-black);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .contact_popup_subtitle{
+    font-family: Karla, sans-serif;
+  }
+  #contact_popup_gender{
+    font-family: Futura, sans-serif;
+    font-size: 1.4rem;
+    background-image: url('../img/underline.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    width: fit-content;
+    margin: auto;
+  }
