@@ -45,6 +45,18 @@ Piste : tester d'autres libs.
  
  - **Infinite Text** Pas réellement de difficultés, mais un problème de reflexion initial sur la manière de le réaliser. Initialement j'ai voulu créer cet effet de "Marquee" en utilisant un seul item avec le texte présent plusieurs fois.. Mais ce n'était pas une manière optimal car ni fluide, ni responsive. Je l'ai ensuite fix rapidement en utilisant des pseudo-éléments.
 
+## Formulaire de contact 
+
+Le formulaire de contact est constitué du formulaire en lui même, ET une popup !
+Le formulaire affiche une alert JS si il n'est pas remplis. 
+Le formulaire s'ouvre via le petit btn en fixed en bas a droite ou via, le menu via le lien "Contact". Il se referme par la croix ou un click sur n'importe quel élément externe au formulaire. 
+La popup s'ouvre lors du sumbit du form. Elle se referme par la croix ou un click sur n'importe quel élément externe au formulaire. 
+
+La popup affiche le code en suivant vos directives 
+« Rosebud » si le sexe est masculin
+« We rob banks » si le sexe est féminin
+« It’s a trap ! » si le sexe n’est pas déterminé ou s’il y a une erreur.
+
 ## Responsive Mobile
 Aucun soucis particulier. 
 Voici les modifications vis à vis de la version Desktop : 
