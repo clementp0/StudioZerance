@@ -23,13 +23,13 @@ a {
 :root {
     --zerance-yellow: #FFCD19;
     --zerance-black: black;
-    --zerance-white:white;
+    --zerance-white: white;
 }
 
 /* Custom font provided */
 @font-face {
     font-family: "Karla";
-    src: url("assets/fonts/Karla-Regular.ttf");
+    src: url("../fonts/Karla-Regular.ttf");
 }
 
 /* --------------- Logo & Header Menu --------------- */
@@ -61,6 +61,7 @@ header {
 .header_elements a {
     position: relative;
 }
+
 .header_elements a::before {
     content: '';
     display: block;
@@ -92,7 +93,7 @@ header {
 }
 
 .banner_heading {
-color: var(--zerance-black);
+    color: var(--zerance-black);
 }
 
 .banner_title {
@@ -105,18 +106,18 @@ color: var(--zerance-black);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center 100%;
-    overflow: visible;
 }
 
 /* --------------- Portfolio --------------- */
 
-.portfolio_container{
+.portfolio_container {
     background-color: var(--zerance-black);
     padding: 5rem 0;
 }
-.portfolio_heading{
+
+.portfolio_heading {
     color: var(--zerance-white);
-    text-align:center ;
+    text-align: center;
     margin-bottom: 4rem;
 }
 
@@ -128,15 +129,80 @@ color: var(--zerance-black);
     max-width: 1400px;
     width: 80%;
     margin: auto;
-  }
+}
 
-  .portfolio_showcase a{
+.portfolio_showcase a {
     margin: auto;
-  }
-  
-  .portfolio_showcase img {
+}
+
+.portfolio_showcase img {
     max-width: 150px;
     max-height: 100%;
     margin: auto;
-  }
-  
+}
+
+/* --------------- Slider --------------- */
+
+
+.swiper {
+    max-height: 70vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 70vh!important;
+    width: 92%!important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex!important;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.swiper-button-next {
+    margin-right: 10%;
+}
+
+.swiper-button-next:after {
+    color: #424242;
+}
+
+.slide_joone {
+    background-image: url('../img/slide/Artboard_2.jpg');
+}
+
+.slide_seasonly {
+    background-image: url('../img/slide/Artboard_1.jpg');
+}
+
+.slider_showmore{
+    font-family: Futura, sans-serif;
+    background-image: url('../img/underline.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    width: fit-content;
+    margin: auto;
+}
+
+.slider_content {
+    margin-right: 10%;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--zerance-white);
+    color: var(--zerance-black);
+}
+.slider_img{
+width: 250px;
+margin: auto;
+}
+.slider_text{
+    font-family: Karla, sans-serif;
+}

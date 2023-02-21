@@ -5,6 +5,7 @@
     <meta name="author" content="Clément PO">
     <meta name="description" content="Test technique - Front-end pour Studio Zerance">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <title>Studio Zerance - Test</title>
 </head>
@@ -36,7 +37,8 @@
     <div class="portfolio_container">
         <p class="portfolio_heading heading">Nos clients sont géniaux !</p>
         <div class="portfolio_showcase">
-            <a href="https://yokoshop.com/" target="_blank"><img src="assets/img/portfolio/Yoko.png" alt="Logo Yoko"></a>
+            <a href="https://yokoshop.com/" target="_blank"><img src="assets/img/portfolio/Yoko.png"
+                    alt="Logo Yoko"></a>
             <a href="#" target="_blank"><img src="assets/img/portfolio/Webedia.png" alt="Logo Webedia"></a>
             <a href="#" target="_blank"><img src="assets/img/portfolio/Avnier.png" alt="Logo Avnier"></a>
             <a href="#" target="_blank"><img src="assets/img/portfolio/Seasonly.png" alt="Logo Seasonly"></a>
@@ -53,6 +55,35 @@
             <a href="#" target="_blank"><img src="assets/img/portfolio/Tealer.png" alt="Logo Tealer"></a>
         </div>
     </div>
+    <!-- Slider -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide_joone">
+                <div class="slider_content">
+                    <p class="slider_heading heading">From scratch /</p>
+                    <img class="slider_img" src="assets/img/portfolio/dark/Seasonly-dark.png" alt="Logo Seasonly">
+                    <p class="slider_text"> Développement site from scratch et d’un quiz personnalisé avec abonnement.
+                        Développement site from scratch et d’un quiz personnalisé avec abonnement.
+                    </p>
+                    <a class="slider_showmore text_bold" href="#">&lt;Voir Plus/&gt;</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide_seasonly">
+                <div class="slider_content">
+                    <p class="slider_heading heading">From scratch /</p>
+                    <img class="slider_img" src="assets/img/portfolio/dark/Joone-dark.png" alt="Logo Seasonly">
+                    <p class="slider_text"> Développement site from scratch et d’un quiz personnalisé avec abonnement.
+                        Développement site from scratch et d’un quiz personnalisé avec abonnement.
+                    </p>
+                    <a class="slider_showmore text_bold" href="#">&lt;Voir Plus/&gt;</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+    </div>
+ <!-- Script Importation -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
