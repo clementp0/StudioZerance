@@ -1,0 +1,133 @@
+/* --------------- Logo & Header Menu --------------- */
+
+.burger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--zerance-black);
+    transition: all 0.3s ease;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked~.header_nav {
+    display: block;
+}
+
+#toggle:checked~.burger span:nth-of-type(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+#toggle:checked~.burger span:nth-of-type(2) {
+    opacity: 0;
+}
+
+#toggle:checked~.burger span:nth-of-type(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.header_nav {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+    background-color: var(--zerance-white);
+    z-index: 1;
+    opacity: 0;
+    animation: fade-in 0.3s ease forwards;
+    box-shadow: 0px 6px 4px 2px rgb(0 0 0 / 15%);
+}
+
+.header_nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header_nav li {
+    margin: 10px 0;
+}
+
+.header_nav a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--zerance-black);
+    transition: all 0.3s ease;
+}
+
+.header_nav a:hover {
+    background-color: #eee;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.banner_container {
+    height: 60vh;
+}
+
+.banner_title {
+    font-size: 3rem;
+    margin: auto;
+}
+
+/* --------------- Portfolio --------------- */
+
+.portfolio_showcase {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.portfolio_showcase img {
+    max-width: 120px;
+}
+
+/* --------------- Slider --------------- */
+
+
+.swiper-slide {
+    width: 100% !important;
+}
+.slider_content {
+    margin: auto;
+    width: 80%;
+}
+.swiper-button-next {
+    right: -30px!important;
+}
+/* --------------- Infinite Text --------------- */
+
+.infinite_container {
+    height: 60px;
+}
+
+.infinite_text {
+    font-size: 1.5rem;
+}
+
+.contact_container {
+    width: 300px;
+    height: 460px;
+}

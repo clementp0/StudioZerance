@@ -39,6 +39,10 @@ a {
 
 /* --------------- Logo & Header Menu --------------- */
 
+#toggle {
+    display: none;
+  }
+
 header {
     font-weight: 700;
     margin: auto;
@@ -53,6 +57,7 @@ header {
     position: absolute;
     max-height: 45%;
     top: 15px;
+    z-index: 2;
 }
 
 .header_elements {
@@ -158,11 +163,11 @@ header {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: var(--zerance-white);
     height: 70vh!important;
     width: 92%!important;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex!important;
     justify-content: flex-end;
     align-items: center;
@@ -187,7 +192,7 @@ header {
 
 .slider_showmore{
     background-image: url('../img/underline.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center 100%;
     width: fit-content;
@@ -276,6 +281,8 @@ margin: auto;
     top: 0;
     left: 0;
     display: none;
+    opacity: 0;
+    animation: fade-in 0.3s ease forwards;
 }
 .contact_container{
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,249,249,1) 77%, var(--zerance-yellow) 36%, var(--zerance-yellow) 100%);
@@ -342,6 +349,8 @@ margin: auto;
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    animation: fade-in 0.3s ease forwards;
   }
   
   .contact_popup_container {
@@ -399,3 +408,13 @@ margin: auto;
     width: fit-content;
     margin: auto;
   }
+
+  @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
