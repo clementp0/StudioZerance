@@ -35,7 +35,7 @@ Utiliser index.html
 |Slider |30min|1h..|5min|1H35|
 |Text Infinite |10min|30min|1min|40min|
 |Contact & Api |1h|10min|1min|1h40|
-|Readme, mise en form |30min|/|/|30min|
+|Readme, mise en forme |30min|/|/|30min|
 |Total ||||~6hxx|
 
 ## Difficultés 
