@@ -49,7 +49,7 @@ Piste : tester d'autres libs.
 
 Le formulaire de contact est constitué du formulaire en lui même, ET une popup !
 Le formulaire affiche une alert JS si il n'est pas remplis. 
-Le formulaire s'ouvre via le petit btn en fixed en bas a droite ou via, le menu via le lien "Contact". Il se referme par la croix ou un click sur n'importe quel élément externe au formulaire. 
+Le formulaire s'ouvre via le petit btn en fixed en bas a droite ou via, le menu via le lien "Contact". Il se referme par la croix ou un click sur n'importe quel élément externe a elle même. 
 La popup s'ouvre lors du sumbit du form. Elle se referme par la croix ou un click sur n'importe quel élément externe au formulaire. 
 
 La popup affiche le code en suivant vos directives 
