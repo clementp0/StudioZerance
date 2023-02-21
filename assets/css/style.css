@@ -206,3 +206,33 @@ margin: auto;
 .slider_text{
     font-family: Karla, sans-serif;
 }
+
+/* --------------- Infinite Text --------------- */
+
+.infinite_container {
+    width: 100%;
+    height: 100px;
+    background-color: var(--zerance-yellow);
+    overflow: hidden;
+  }
+
+  .infinite_loop{
+    position: relative;
+    animation: infinteloop linear 12.5s infinite;
+}
+
+.infinite_loop_text {
+    font-size: 2rem;
+    font-family: Futura, sans-serif;
+    color: var(--zerance-white);
+    white-space: nowrap;
+}
+
+@keyframes infinteloop {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
